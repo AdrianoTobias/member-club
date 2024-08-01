@@ -1,0 +1,27 @@
+header {    
+        & img {
+            width: 6.21625rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            margin-inline: auto;
+        }
+
+        & input {
+            width: 100%;                              
+        }
+}
+
+@media (width >= 57em) {
+    header {    
+        & img {
+            width: 7.25rem;
+            margin-top: 4rem;
+            margin-bottom: 2rem; 
+        }
+
+        .input-container {            
+            width: 25rem;                                 
+            margin-inline: auto;
+        }
+    }
+}
