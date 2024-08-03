@@ -45,3 +45,7 @@ html {
 body {
   background-color: var(--base---gray-200);
 }
+
+main {
+  padding-top: 1.25rem;
+}
