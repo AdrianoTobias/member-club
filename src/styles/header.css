@@ -1,20 +1,22 @@
 header {    
-        & img {
-            width: 6.21625rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            margin-inline: auto;
-        }
+    & .logo img {
+        width: 6.214375rem;
+        height: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-inline: auto;
+    }
 
-        & input {
-            width: 100%;                              
-        }
+    & input {
+        width: 100%;                            
+    }
 }
 
 @media (width >= 57em) {
     header {    
-        & img {
+        & .logo img {
             width: 7.25rem;
+            height: 3.5rem;
             margin-top: 4rem;
             margin-bottom: 2rem; 
         }
