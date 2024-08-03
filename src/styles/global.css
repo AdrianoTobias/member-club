@@ -47,5 +47,7 @@ body {
 }
 
 main {
-  padding-top: 1.25rem;
+  display: grid;
+  padding: 1.25rem 0 .9375rem;
+  gap: .5rem;
 }

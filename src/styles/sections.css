@@ -103,7 +103,6 @@
         display: flex;
         flex-wrap: wrap;
         padding-block: 1.25rem;
-        justify-content: space-between;
         gap: .5rem;        
 
         & .item {
@@ -141,7 +140,7 @@
         flex: auto;
         display: grid;
         padding-block: .2rem;
-        
+
         & p {
             font-size: var(--body---text--sm);
             white-space: nowrap;
@@ -170,6 +169,77 @@
             object-fit: cover;
         }
     }
+}
+
+#history {
+    display: grid;
+    padding: 1.5rem 1.25rem 1.25rem;
+    gap: 1rem;    
+    background: var(--base---gray-100);
+    border: 1px solid var(--base---gray-300);
+    border-radius: 1rem;
+
+    & header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & h2 {
+            font-size: var(--heading---subtitle--sm);
+            font-weight: var(--font---weight--bold);
+            text-transform: uppercase;
+        }
+
+        & p {
+            font-size: var(--body---text--xs);            
+        }
+    }
+
+    & ul {
+        display: grid;
+        list-style: none;
+        padding-top: .75rem;
+        border-top: 1px solid var(--base---gray-200);        
+        gap: .75rem;
+
+        & li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .125rem 0;
+
+            & .title {
+                display: grid;
+                gap: .125rem;
+
+                & h2 {
+                    font-size: var(--heading---subtitle--sm);
+                    font-weight: var(--font---weight--bold);
+                    color: var(--base---gray-600);
+                }
+
+                & p {
+                    font-size: var(--body---text--xs);
+                }
+            }
+
+            & .seal-check-container {
+                display: flex;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 62.4375rem;
+                align-items: center;
+                justify-content: center;
+                background: rgba(69, 180, 66, 0.12); /*#45B4421F*/
+
+                & img {
+                    width: 1.3125rem;
+                    height: 1.3125rem;
+                }
+            }
+        }
+    }
+
 }
 
 
