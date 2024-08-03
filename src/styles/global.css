@@ -51,3 +51,33 @@ main {
   padding: 1.25rem 0 .9375rem;
   gap: .5rem;
 }
+
+
+@media (width >= 57em) {
+  
+  main{
+    padding-top: 4rem;
+    gap: 1rem 1.5rem;
+    grid-template-columns: .365fr .635fr;
+  
+    grid-template-areas:
+      "user card"
+      "history card"
+      "history progress";
+
+    /* Chrome, Safari e Edge */
+    & ::-webkit-scrollbar {
+      width: .375rem;
+    }
+
+    & ::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 62.4375rem;
+    }
+
+    & ::-webkit-scrollbar-thumb {
+      background: var(--base---gray-300);
+      border-radius: 62.4375rem;
+    }
+  }
+}

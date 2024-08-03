@@ -131,7 +131,7 @@
 #progress {
     display: flex;
     padding: 1rem 1.25rem;
-    gap: 1rem;    
+    gap: 1.5rem;    
     background: var(--base---gray-100);
     border: 1px solid var(--base---gray-300);
     border-radius: 1rem;
@@ -139,7 +139,7 @@
     & #content {
         flex: auto;
         display: grid;
-        padding-block: .2rem;
+        padding-block: .3rem;
 
         & p {
             font-size: var(--body---text--sm);
@@ -244,8 +244,87 @@
 
 
 @media (width >= 57em) {
-    #user {
-                                       
-        margin-inline: auto;
+    & #user {
+        grid-area: user;
+    }
+
+    & #card {
+        grid-area: card;
+
+        border-radius: 1.25rem;
+        gap: 2rem;
+        padding: 2.25rem 1.8rem 2rem;
+        height: 20.8125rem;
+
+        & div:nth-of-type(1) & #tag-id {
+            padding: 0 .75rem;
+            height: 2rem;
+
+            & h2 {
+                font-size: var(--heading---subtitle--md);
+            }
+        }
+
+        & #slots {
+            gap: 1rem;
+
+            & .item {            
+                width: 5.5rem;
+                height: 5.5rem;
+                border-radius: 1.25rem;
+
+                & img {                
+                    width: 4rem;
+                    height: 4rem;  
+                } 
+            }
+
+            & .item:last-child img {
+                width: 2.5rem;
+                height: 2.5rem; 
+            }
+        }
+    }
+
+    & #progress {
+        grid-area: progress;
+
+        padding: 1.5rem 2rem;
+        gap: 2rem;
+        height: 7.3125rem;
+
+        & #content {
+            gap: .75rem;
+
+            & p {
+                font-size: var(--body---text--md);
+                
+                & span {
+                    font-size: var(--heading---title--md);
+                }
+            } 
+        }
+
+        & #item {
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 62.4375rem;
+    
+            & img {
+                margin-top: 1.25rem;
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+
+    & #history {
+        padding: 1.75rem 1.75rem 1.5rem 1.5rem;
+
+        grid-area: history;
+
+        height: 22.5rem;
+        overflow: scroll;
+        overflow-x: hidden;
     }
 }
