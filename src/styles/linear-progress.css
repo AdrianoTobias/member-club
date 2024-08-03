@@ -1,0 +1,18 @@
+.linear-progress {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    .bar {
+        background: var(--base---gray-300);
+        border-radius: 624.9375rem;
+        width: 100%;
+        
+        & .progress-indicator {
+            background: var(--gradient-base);  
+            border-radius: 624.9375rem;          
+            height: .5rem;
+            width: 70%;
+        }           
+    }
+}

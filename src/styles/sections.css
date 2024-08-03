@@ -129,6 +129,49 @@
     }
 }
 
+#progress {
+    display: flex;
+    padding: 1rem 1.25rem;
+    gap: 1rem;    
+    background: var(--base---gray-100);
+    border: 1px solid var(--base---gray-300);
+    border-radius: 1rem;
+
+    & #content {
+        flex: auto;
+        display: grid;
+        padding-block: .2rem;
+        
+        & p {
+            font-size: var(--body---text--sm);
+            white-space: nowrap;
+            
+            & span {
+                font-size: var(--heading---title--sm);
+                font-weight: var(--font---weight--bold);
+                color: var(--base---gray-600);
+            }
+        }        
+    }
+
+    & #item {
+        display: flex;
+        width: 3.5rem;
+        height: 3.5rem;
+        background: var(--base---gray-200);
+        border-radius: 48.5625rem;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+            margin-top: .7rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            object-fit: cover;
+        }
+    }
+}
+
 
 @media (width >= 57em) {
     #user {
