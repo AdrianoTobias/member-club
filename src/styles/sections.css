@@ -15,7 +15,7 @@
         height: 3.5rem;
         object-fit: cover;
         border-radius: .625rem;
-        border: .01875rem solid white;
+        border: .1875rem solid var(--base---gray-100);
 
         z-index: 1;
     }
