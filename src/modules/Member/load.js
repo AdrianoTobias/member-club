@@ -1,3 +1,5 @@
+import { showModal } from "../Form/modal.js";
+
 const userSection = document.getElementById("user");
 const cardSection = document.getElementById("card");
 const progressSection = document.getElementById("progress");
@@ -5,12 +7,15 @@ const historySection = document.getElementById("history");
 const main = document.querySelector("main");
 
 export function load({ id, name, clientSince, appointmentHistory, loyaltyCard}) {
-    const { totalCuts } = loyaltyCard;
+    const { totalCuts, cutsNeeded } = loyaltyCard;
 
     loadUserSection({ id, name, clientSince });
     loadCardSection({ id, totalCuts });    
     loadProgressSection(loyaltyCard);
     loadHistorySection(appointmentHistory);
+
+    if (totalCuts === cutsNeeded)
+        showModal();
 
     main.style.display = "grid";
 }

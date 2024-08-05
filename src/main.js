@@ -11,4 +11,5 @@ import "./styles/modal.css"
 
 // JS
 import "./modules/Form/submit.js"
+import "./modules/Form/modal.js"
 import "./modules/Member/load.js"
