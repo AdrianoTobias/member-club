@@ -14,6 +14,11 @@ form.onsubmit = async (event) => {
 
         if (!cardId)
             throw "Informe o ID do cartão!";
+
+        const clientInfo = await getClientById(cardId);
+
+        if (!clientInfo?.id)
+             throw "Não foi possível buscar. Tente novamente mais tarde.";
         
         clientCardId.value = "";
     } catch (error) {
