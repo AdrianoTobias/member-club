@@ -52,6 +52,11 @@ main {
   gap: .5rem;
 }
 
+.container {
+  width: min(23.4375rem, 100% - 0.75rem * 2);
+  margin-inline: auto;
+}
+
 
 @media (width >= 57em) {
   
@@ -80,5 +85,9 @@ main {
       background: var(--base---gray-300);
       border-radius: 62.4375rem;
     }
+  }
+
+  .container {
+    width: 57rem;
   }
 }

@@ -1,10 +1,14 @@
 header {    
-    & .logo img {
-        width: 6.214375rem;
-        height: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        margin-inline: auto;
+    & .logo {
+        display: flex;
+    
+        & img {
+            width: 6.214375rem;
+            height: 3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            margin-inline: auto;
+        }
     }
 
     & input {
