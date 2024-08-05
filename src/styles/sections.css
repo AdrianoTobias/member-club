@@ -121,7 +121,7 @@
             }            
         }
 
-        & .item:last-child img {
+        & .item:last-child img[src*='GiftSolid'] {
             width: 1.5rem;
             height: 1.5rem; 
         }
@@ -279,7 +279,7 @@
                 } 
             }
 
-            & .item:last-child img {
+            & .item:last-child img[src*='GiftSolid'] {
                 width: 2.5rem;
                 height: 2.5rem; 
             }
