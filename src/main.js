@@ -10,3 +10,4 @@ import "./styles/linear-progress.css"
 
 // JS
 import "./modules/Form/submit.js"
+import "./modules/Member/load.js"

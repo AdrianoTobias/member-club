@@ -20,6 +20,8 @@ form.onsubmit = async (event) => {
         if (!clientInfo?.id)
              throw "Não foi possível buscar. Tente novamente mais tarde.";
         
+        load(clientInfo);
+        
         clientCardId.value = "";
     } catch (error) {
         clientCardId.focus();

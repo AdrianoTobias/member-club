@@ -56,6 +56,7 @@ main {
 @media (width >= 57em) {
   
   main{
+    display: none; /*grid*/
     padding-top: 4rem;
     gap: 1rem 1.5rem;
     grid-template-columns: .365fr .635fr;
